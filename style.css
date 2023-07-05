@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-color: rgb(62, 131, 159);
+    animation: main;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes main{
+
+10%{
+    background-color: rgb(29, 162, 215);
+}
+20%{
+    background-color: rgb(215, 190, 29);
+}
+30%{
+    background-color: rgb(218, 163, 25);
+}
+40%{
+    background-color: rgb(231, 154, 12);
+}
+50%{
+    background-color: rgb(230, 119, 16);
+}
+60%{
+    background-color: rgb(218, 79, 20);
+}
+70%{
+    background-color: rgb(168, 49, 30);
+}
+80%{
+    background-color: rgb(56, 67, 71);
+}
+90%{
+    background-color: rgb(40, 41, 42);
+}
+
+100%{
+    background-color: rgb(6, 4, 36);
+}
+
+
+
+
+}
+img{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 300px;
+}
+
+.sun{
+    background-image: radial-gradient(circle,orange,yellow,red);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 40%;
+    top: 2%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 6px rgb(255, 255, 56);
+    animation-name: sunset;
+    animation-fill-mode: forwards;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+   
+}
+
+@keyframes sunset{
+    100%{
+        transform: translateY(650px);
+    }
+}
+
+.moon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 4%;
+    top: 3%;
+    border-radius: 50%;
+    box-shadow: -20px 10px white ;
+    opacity: 0;
+    animation: rise;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes rise{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
